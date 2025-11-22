@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { initializeApp } from 'firebase/app';
+import { firebaseApp } from "./firebase"; // 路径要和你创建的firebase文件对应
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
 import { getFirestore, doc, collection, query, onSnapshot, addDoc, deleteDoc, updateDoc, setDoc, serverTimestamp, where } from 'firebase/firestore';
 import {
